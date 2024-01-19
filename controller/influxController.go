@@ -16,7 +16,7 @@ func Query() error {
 
    // INFLUX_TOKEN is an environment variable you created
    // for your API read token.
-  token := "x_Wt_8eNxH7RfZJzADPxDp3TCJBcFuSJDdeA6sp9kIskTEIpwsDs9Lr_FvHrvGM0jeDbLGXd48_zAEPdgTq3fA=="
+  token := os.Getenv("INFLUXDB_TOKEN")
   database := "get-started"
 
   // Instantiate the client.
